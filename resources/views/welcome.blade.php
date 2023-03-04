@@ -26,44 +26,23 @@
             <div class="alert alert-danger">{{$message}}</div>
         @enderror
         <input type="text" name="name" placeholder="Enter your name" value="{{old('name')}}">
+      <br>
         @error('email')
             <div class="alert alert-danger">{{$message}}</div>
         @enderror
        <input type="text" name="email" placeholder="Enter your email" value="{{old('email')}}">
+     <br>
        @error('number')
             <div class="alert alert-danger">{{$message}}</div>
         @enderror
+         <br>
        <input type="number" name="number" placeholder="Enter your number" value="{{old('number')}}">
+         <br>
        <button type="submit" name="submit " class="btn btn-primary">Submit</button>
        </form>
        
     </div>
-    .<div class="table-responsive">
-        {{
-            print_r($All_Data)
-        }}
-        <table class="table table-primary">
-            <thead>
-                <tr>
-                    <th scope="col">Name </th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Mobile</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="">
-                    <td>R1C2</td>
-                    <td>R1C2</td>
-                    <td>R1C3</td>
-                </tr>
-                <tr class="">                   
-                     <td>R1C2</td>
-                    <td>Item</td>
-                    <td>Item</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    
     
   </body>
 </html>

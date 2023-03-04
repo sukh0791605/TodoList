@@ -20,4 +20,11 @@ use App\Http\Controllers\todo;
 // });R
 Route::get('/',[todo::class,'index']);
 Route::post('/',[todo::class,'data']);
+Route::get('/Home',[todo::class,'Add']);
+Route::get('/Update/{id}',[todo::class,'Update']);
+Route::post('/Update/{id}',[todo::class,'newData'])->name('NewData');
 
+Route::get('/Delete/{id}',[todo::class,'Delete']);
+
+
+?>
